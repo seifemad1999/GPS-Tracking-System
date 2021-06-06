@@ -1,0 +1,870 @@
+[
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@192@macro@GPIO_PORTA_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@269@macro@GPIO_PORTA_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@346@macro@GPIO_PORTA_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@423@macro@GPIO_PORTA_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@500@macro@GPIO_PORTA_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@577@macro@GPIO_PORTA_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@654@macro@GPIO_PORTA_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@731@macro@GPIO_PORTA_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@808@macro@GPIO_PORTA_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@885@macro@GPIO_PORTA_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTA_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1148@macro@GPIO_PORTB_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1225@macro@GPIO_PORTB_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1302@macro@GPIO_PORTB_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1379@macro@GPIO_PORTB_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1456@macro@GPIO_PORTB_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1533@macro@GPIO_PORTB_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1610@macro@GPIO_PORTB_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1687@macro@GPIO_PORTB_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1764@macro@GPIO_PORTB_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1841@macro@GPIO_PORTB_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTB_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2104@macro@GPIO_PORTC_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2181@macro@GPIO_PORTC_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2258@macro@GPIO_PORTC_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2335@macro@GPIO_PORTC_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2412@macro@GPIO_PORTC_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2489@macro@GPIO_PORTC_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2566@macro@GPIO_PORTC_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2643@macro@GPIO_PORTC_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2720@macro@GPIO_PORTC_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@2797@macro@GPIO_PORTC_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTC_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3060@macro@GPIO_PORTD_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3137@macro@GPIO_PORTD_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3214@macro@GPIO_PORTD_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3291@macro@GPIO_PORTD_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3368@macro@GPIO_PORTD_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3445@macro@GPIO_PORTD_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3522@macro@GPIO_PORTD_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3599@macro@GPIO_PORTD_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3676@macro@GPIO_PORTD_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@3753@macro@GPIO_PORTD_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTD_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4016@macro@GPIO_PORTE_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4093@macro@GPIO_PORTE_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "61",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4170@macro@GPIO_PORTE_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4247@macro@GPIO_PORTE_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "63",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4324@macro@GPIO_PORTE_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "64",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4401@macro@GPIO_PORTE_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4478@macro@GPIO_PORTE_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4555@macro@GPIO_PORTE_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4632@macro@GPIO_PORTE_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4709@macro@GPIO_PORTE_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTE_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@4972@macro@GPIO_PORTF_DATA_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_DATA_REG",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_DATA_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5049@macro@GPIO_PORTF_DIR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_DIR_REG",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_DIR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5126@macro@GPIO_PORTF_AFSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_AFSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_AFSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5203@macro@GPIO_PORTF_PUR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_PUR_REG",
+    "location": {
+      "column": "9",
+      "line": "77",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_PUR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5280@macro@GPIO_PORTF_PDR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_PDR_REG",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_PDR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5357@macro@GPIO_PORTF_DEN_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_DEN_REG",
+    "location": {
+      "column": "9",
+      "line": "79",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_DEN_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5434@macro@GPIO_PORTF_LOCK_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_LOCK_REG",
+    "location": {
+      "column": "9",
+      "line": "80",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_LOCK_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5511@macro@GPIO_PORTF_CR_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_CR_REG",
+    "location": {
+      "column": "9",
+      "line": "81",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_CR_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5588@macro@GPIO_PORTF_AMSEL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_AMSEL_REG",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_AMSEL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5665@macro@GPIO_PORTF_PCTL_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_PCTL_REG",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "GPIO_PORTF_PCTL_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@5744@macro@SYSCTL_REGCGC2_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSCTL_REGCGC2_REG",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\tm4c123gh6pm_registers.h"
+    },
+    "name": "SYSCTL_REGCGC2_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "2",
+      "path": "D:\\3rd Computer\\Sec_Term\\Micro\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]

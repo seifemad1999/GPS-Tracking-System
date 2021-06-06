@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1477</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1107</ColumnWidth1><ColumnWidth2>295</ColumnWidth2><ColumnWidth3>73</ColumnWidth3></Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>102</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <Register/></Static>
+    <Windows>
+      
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-22735-24539</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-193-24552</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-715-24542</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>my_uart</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-22212-24549</Identity>
+            <TabName>Disassembly</TabName>
+            <Factory>Disassembly</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-15295-16677</Identity><TabName>Register</TabName><Factory>Register</Factory><Session><REG1>0</REG1><REG2>0</REG2><Group>7</Group><States>3</States><State0>SYST_CVR</State0><State1>SYST_RVR</State1><State2>UART0LCRH</State2></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd5></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\std_types.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>966</SelStart2><SelEnd2>966</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\common_macros.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>4</YPos2><SelStart2>403</SelStart2><SelEnd2>420</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lcd.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>15</YPos2><SelStart2>1165</SelStart2><SelEnd2>1198</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lcd.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>115</YPos2><SelStart2>4165</SelStart2><SelEnd2>4180</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Port.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>410</SelStart2><SelEnd2>410</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\systick.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>762</SelStart2><SelEnd2>762</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>160</YPos2><SelStart2>5447</SelStart2><SelEnd2>5447</SelEnd2></Tab><ActiveTab>6</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\tm4c123gh6pm_registers.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>276</YPos2><SelStart2>19096</SelStart2><SelEnd2>19096</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\uart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>39</YPos2><SelStart2>1812</SelStart2><SelEnd2>1829</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\systick.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>15</YPos2><SelStart2>1237</SelStart2><SelEnd2>1237</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Port.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\uart.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>8</YPos2><SelStart2>763</SelStart2><SelEnd2>767</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\cstartup_M.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>39</YPos2><SelStart2>1915</SelStart2><SelEnd2>1915</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-017E0738><key>iaridepm.enu1</key></Toolbar-017E0738></Sizes></Row0><Row1><Sizes><Toolbar-10560AC8><key>debuggergui.enu1</key></Toolbar-10560AC8></Sizes></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>443</Bottom><Right>176</Right><x>-2</x><y>-2</y><xscreen>178</xscreen><yscreen>175</yscreen><sizeHorzCX>130307</sizeHorzCX><sizeHorzCY>255474</sizeHorzCY><sizeVertCX>130307</sizeVertCX><sizeVertCY>649635</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>443</Bottom><Right>298</Right><x>-2</x><y>-2</y><xscreen>178</xscreen><yscreen>175</yscreen><sizeHorzCX>130307</sizeHorzCX><sizeHorzCY>255474</sizeHorzCY><sizeVertCX>219619</sizeVertCX><sizeVertCY>649635</sizeVertCY></Rect></Wnd4></Sizes></Row0><Row1><Sizes><Wnd5><Rect><Top>-2</Top><Left>296</Left><Bottom>443</Bottom><Right>605</Right><x>296</x><y>-2</y><xscreen>178</xscreen><yscreen>175</yscreen><sizeHorzCX>130307</sizeHorzCX><sizeHorzCY>255474</sizeHorzCY><sizeVertCX>226208</sizeVertCX><sizeVertCY>649635</sizeVertCY></Rect></Wnd5></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>173</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>175</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>255474</sizeHorzCY><sizeVertCX>130307</sizeVertCX><sizeVertCY>255474</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+
