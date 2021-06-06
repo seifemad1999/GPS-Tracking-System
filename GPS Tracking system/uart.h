@@ -48,18 +48,18 @@ void UART0_SendByte (const uint8 data);
 
 uint8 UART0_ReceiveByte (void);
 
-void UART0_SendString(const uint8 *Str);
+//void UART0_SendString(const uint8 *Str);
+//
+//void UART0_ReceiveString(uint8 *Str); // Receive until #
 
-void UART0_ReceiveString(uint8 *Str); // Receive until #
+void UART5_init (void);
 
-void UART2_init (void);
+void UART5_SendByte (const uint8 data);
 
-void UART2_SendByte (const uint8 data);
+uint8 UART5_ReceiveByte (void);
 
-uint8 UART2_ReceiveByte (void);
-
-void UART2_SendString(const uint8 *Str);
-
-void UART2_ReceiveString(uint8 *Str); // Receive until #
+//void UART2_SendString(const uint8 *Str);
+//
+//void UART2_ReceiveString(uint8 *Str); // Receive until #
 
 #endif /* UART_H_ */
