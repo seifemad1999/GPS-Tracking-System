@@ -47,6 +47,117 @@ void sysTick_Handler(void)
    //ftoa(data, buff, 3); /* 10 for decimal 
    //LCD_displayString(buff);
 //}
+void readGPSModule(void)
+{
+	char x_str[15];
+	char y_str[15];
+	char c0;//GPSValues[100],parseValue[12][20],*token;
+			//double latitude=0.0,longitude=0.0,seconds=0.0,minutes=0.0;
+			//const char comma[2] = ",";
+			//  int index=0,degrees;
+	int i_x = 0;
+	int i_y = 0;
+	while (1)
+	{
+		c0 = (char)UART5_ReceiveByte();
+		LCD_displayCharacter(c0);
+		//gelen data $GPRMC mi?
+		if (c0 == '$')
+		{
+			char c1 = (char)UART5_ReceiveByte();
+			LCD_displayCharacter(c1);
+			if (c1 == 'G')
+			{
+				char c2 = (char)UART5_ReceiveByte();
+				LCD_displayCharacter(c2);
+				if (c2 == 'P')
+				{
+					char c3 = (char)UART5_ReceiveByte();
+					LCD_displayCharacter(c3);
+					if (c3 == 'R')
+					{
+						char c4 = (char)UART5_ReceiveByte();
+						LCD_displayCharacter(c4);
+						if (c4 == 'M')
+						{
+							char c5 = (char)UART5_ReceiveByte();
+							LCD_displayCharacter(c5);
+							if (c5 == 'C')
+							{
+								char c6 = (char)UART5_ReceiveByte();
+								LCD_displayCharacter(c6);
+								if (c6 == ',')
+								{
+									// char c7=(char)UART5_ReceiveByte();
+									//  LCD_displayCharacter(c7);
+									//reading
+									LCD_clearScreen();
+									while (1)
+									{
+										char temp = (char)UART5_ReceiveByte();
+										LCD_displayCharacter(temp);
+										if (temp == 'A')
+											break;
+										// x_str[i] = UART5_ReceiveByte();
+										//i++;
+									}
+									char temp = (char)UART5_ReceiveByte();
+									LCD_displayCharacter(temp);
+									if (temp == ',') // store the latitude in x_str
+									{
+										LCD_clearScreen();
+
+										while (1)
+										{
+											char c7 = UART5_ReceiveByte();
+											if (c7 == ',')
+												break;
+											x_str[i_x] = c7;
+											i_x++;
+										}
+									}
+									char c8 = (char)UART5_ReceiveByte();
+									LCD_displayCharacter(c8);
+
+									if (c8 == 'N')
+									{
+										char c9 = (char)UART5_ReceiveByte();
+										LCD_displayCharacter(c9);
+										if (c9 == ',')
+										{
+
+											LCD_clearScreen();
+											while (1) // store the longitude
+											{
+												char c10 = (char)UART5_ReceiveByte();
+												LCD_displayCharacter(c10);
+												if (c10 == ',')
+													break;
+												y_str[i_y] = c10;
+												i_y++;
+											}
+											LCD_clearScreen();
+											LCD_displayString(x_str);
+											LCD_clearScreen();
+											LCD_displayString(y_str);
+											//_delay_ms(1000);
+											points[number_of_points].x = atof(x_str);
+											points[number_of_points].y = atof(y_str);
+											if ((points[number_of_points].x >= x_dest_min && points[number_of_points].x <= x_dest_max) && (points[number_of_points].y >= y_dest_min && points[number_of_points].y <= y_dest_max))
+												flag_destination = 1;
+											break;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 void main()
 { 
   int i=0;
