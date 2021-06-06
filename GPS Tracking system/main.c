@@ -47,6 +47,45 @@ void sysTick_Handler(void)
    //ftoa(data, buff, 3); /* 10 for decimal 
    //LCD_displayString(buff);
 //}
+
+
+double degtorad(double deg) {
+	return (deg * pi / 180);
+}
+
+
+double radtodeg(double rad) {
+	return (rad * 180 / pi);
+}
+
+float distance(float lat1, float lon1, float lat2, float lon2, char unit) {
+	double theta, dist;
+	if ((lat1 == lat2) && (lon1 == lon2)) {
+		return 0;
+	}
+	else {
+		theta = lon1 - lon2;
+		dist = sin(degtorad(lat1)) * sin(degtorad(lat2)) + cos(degtorad(lat1)) * cos(degtorad(lat2)) * cos(degtorad(theta));
+		dist = acos(dist);
+		dist = radtodeg(dist);
+		dist = dist * 60 * 1.1515;
+		switch (unit) {
+		case 'M':
+			break;
+		case 'K':
+			dist = dist * 1.609344;
+			break;
+		case 'N':
+			dist = dist * 0.8684;
+		case 'm':
+			dist = (dist * 1.609344) / 1000;
+			break;
+		}
+		return (dist);
+	}
+}
+
+
 void readGPSModule(void)
 {
 	char x_str[15];
