@@ -6,7 +6,6 @@
  *
  * Description: Header file for TM4C123GH6PM Microcontroller - Port Driver.
  *
- * Author: seif eldeen amr
  ******************************************************************************/
 
 #ifndef PORT_H
