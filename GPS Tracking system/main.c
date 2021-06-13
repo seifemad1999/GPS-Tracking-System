@@ -7,26 +7,22 @@
 #include <math.h>
 #include <stdio.h>
 #define MAX_POINTS 1000
-#define x_dest_min 20
-#define y_dest_min 20
-#define x_dest_max 21 
-#define y_dest_max 21
+#define x_dest_min 30.06850
+#define y_dest_min 31.35490
+#define x_dest_max 30.07098
+#define y_dest_max 31.35572
 #define pi 3.1415926535897932384
-int number_of_points =0; // global variable increament with each point
 typedef struct
 {
-  float x;
-  float y;
+  double x;
+  double y;
 }point;
 
+int number_of_points =0; // global variable increament with each point
 point points[MAX_POINTS]; // array hold all the points which will recorded by GPS 
-
-float global_distance=0.0;
-bool flag =0;
-bool flag_destination = 0;
-point min_destination = {x_dest_min,y_dest_min};
-point max_destination = {x_dest_max,y_dest_max};
-
+bool flag =FALSE;
+bool flag_destination = FALSE;
+bool flag_SW1 =FALSE;
 
 /* SysTick Timer ISR ... No need to clear the trigger flag (COUNT) bit ... it cleared automatically by the HW */
 void sysTick_Handler(void)
@@ -41,13 +37,52 @@ void sysTick_Handler(void)
 
 }
 
-//void LCD_floatToString(float data)
-//{
-   //char buff[16]; /* String to hold the ascii result 
-   //ftoa(data, buff, 3); /* 10 for decimal 
-   //LCD_displayString(buff);
-//}
-
+void modify_points(char x_str[], char y_str[])
+{
+  char *ptr;
+  char temp_x[20];
+  char temp_y[20];
+  double temp2;
+  char first_2_char[3];
+  ///////////////////////////// modify x /////////////////////////
+  first_2_char[0]=x_str[0];
+  first_2_char[1]=x_str[1];
+  first_2_char[2]='\0';
+  int counter =2;
+  int index =0;
+  while(x_str[counter]!='\0')
+  {
+    temp_x[index]=x_str[counter];
+    counter++;
+    index++;
+  }
+  temp_x[index] = '\0';
+  temp2 = strtod(temp_x,&ptr);
+  temp2 /= 60;
+  temp2 = temp2 + strtod(first_2_char,&ptr);
+  points[number_of_points].x = temp2;
+  //////////////////////////// modify y ///////////////////////////
+  first_2_char[0]=y_str[0];
+  first_2_char[1]=y_str[1];
+  first_2_char[2]='\0';
+  counter =2 ;
+  index =0;
+  while(y_str[counter]!='\0')
+  {
+    temp_y[index]=y_str[counter];
+    counter++;
+    index++;
+  }
+  temp_y[index] = '\0';
+  temp2 = strtod(temp_y,&ptr);
+  temp2 /= 60;
+  temp2 = temp2 + strtod(first_2_char,&ptr);
+  points[number_of_points].y = temp2;
+  /////////////////////////////////////////////////////////////////////////////
+  if((points[number_of_points].x >= x_dest_min && points[number_of_points].x <= x_dest_max) && (points[number_of_points].y>=y_dest_min && points[number_of_points].y<=y_dest_max) )
+      flag_destination =1;
+  return; 
+}
 long double toRadians(const long double degree)
 {
 	// cmath library in C++
@@ -185,39 +220,52 @@ void readGPSModule(void)
 		}
 	}
 
+void GPIOPORTF_Handler(void)
+{
+  GPIO_PORTF_ICR_REG   |= (1<<4);       /* Clear Trigger flag for PF4 (Interupt Flag) */
+  flag_SW1 = TRUE;
+  SET_BIT(GPIO_PORTF_DATA_REG,2);  // bright the led
+}
 void main()
 { 
   int i=0;
-  //while(!(SYSTICK_CTRL_REG & (1<<16)));
-  //SW1_Init();
-  //UART0_init ();
-  
+  double global_distance = 0.0;
   lcd_and_led_init();
-  LCD_init();
+  LCD_init(); 
+  SW1_Init();
+  UART0_init();
   UART5_init();
   sysTick_init();
-  //Enable_Exceptions();
-  //Enable_Interrupts();
+  Enable_Interrupts();
   while(1)
-  {
-     // char s;
-     //s = UART5_ReceiveByte();
-     //LCD_displayCharacter(s);
-      //while(!(SYSTICK_CTRL_REG & (1<<16)));      
-      //str_to_points();
+  {  
+      for(int j=0;j<1;j++)
+      {
+       while(!(SYSTICK_CTRL_REG & (1<<16)));  
+      }
       readGPSModule();
-      number_of_points++;
+      LCD_clearScreen();
+      number_of_points++; 
       if(number_of_points>=2)
       {
-       global_distance += distance(points[i].x,points[i].y,points[i+1].x,points[i+1].y,'m');
-       i++;
+         global_distance += distance(points[i].x,points[i].y,points[i+1].x,points[i+1].y);
+         i++;
+         char dist [20];
+         snprintf(dist,15,"%f",global_distance); // display the global distance continously
+         LCD_displayString(dist);
+         _delay_ms(4000);
+         LCD_clearScreen();
       }
-       if(global_distance>=100 || BIT_IS_CLEAR(GPIO_PORTF_DATA_REG,4) || flag_destination ==1)
+      if(global_distance>=100 || flag_SW1 == TRUE || flag_destination ==1)
       {
-      //Disable_Interrupts(); // stop recieving points from GPS
-      SET_BIT(GPIO_PORTF_DATA_REG,2);  // bright the led
-      LCD_clearScreen();
-      void LCD_floatToString(float data) ;// display on lcd
+          SET_BIT(GPIO_PORTF_DATA_REG,2);  // bright the led
+          char dist [20];
+          snprintf(dist,10,"%f",global_distance); // display the global distace when ome from  thre condition occur
+          LCD_displayString(dist);
+          while(1)
+          {
+            ;
+          }
       }     
    }  
 }
