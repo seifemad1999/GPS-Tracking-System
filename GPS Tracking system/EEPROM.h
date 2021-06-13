@@ -21,6 +21,8 @@
 
 void EEPROM_init(void);
 
+void EEPROM_WriteData(uint16 currentBlock, uint8 currentOffset,sint32 data);
+sint32 EEPROM_ReadData(uint16 currentBlock, uint8 currentOffset);
 
 
 
