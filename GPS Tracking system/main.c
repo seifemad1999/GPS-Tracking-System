@@ -88,64 +88,46 @@ float distance(float lat1, float lon1, float lat2, float lon2, char unit) {
 
 void readGPSModule(void)
 {
-	char x_str[15];
-	char y_str[15];
-	char c0;//GPSValues[100],parseValue[12][20],*token;
-			//double latitude=0.0,longitude=0.0,seconds=0.0,minutes=0.0;
-			//const char comma[2] = ",";
-			//  int index=0,degrees;
+	char x_str[20];
+	char y_str[20];
+	char y_str_modified[20];
+	char c0;
 	int i_x = 0;
 	int i_y = 0;
 	while (1)
 	{
 		c0 = (char)UART5_ReceiveByte();
-		LCD_displayCharacter(c0);
 		//gelen data $GPRMC mi?
 		if (c0 == '$')
 		{
 			char c1 = (char)UART5_ReceiveByte();
-			LCD_displayCharacter(c1);
 			if (c1 == 'G')
 			{
 				char c2 = (char)UART5_ReceiveByte();
-				LCD_displayCharacter(c2);
 				if (c2 == 'P')
 				{
 					char c3 = (char)UART5_ReceiveByte();
-					LCD_displayCharacter(c3);
 					if (c3 == 'R')
 					{
 						char c4 = (char)UART5_ReceiveByte();
-						LCD_displayCharacter(c4);
 						if (c4 == 'M')
 						{
 							char c5 = (char)UART5_ReceiveByte();
-							LCD_displayCharacter(c5);
 							if (c5 == 'C')
 							{
 								char c6 = (char)UART5_ReceiveByte();
-								LCD_displayCharacter(c6);
 								if (c6 == ',')
 								{
-									// char c7=(char)UART5_ReceiveByte();
-									//  LCD_displayCharacter(c7);
-									//reading
-									LCD_clearScreen();
 									while (1)
 									{
 										char temp = (char)UART5_ReceiveByte();
-										LCD_displayCharacter(temp);
 										if (temp == 'A')
 											break;
-										// x_str[i] = UART5_ReceiveByte();
-										//i++;
 									}
 									char temp = (char)UART5_ReceiveByte();
-									LCD_displayCharacter(temp);
+
 									if (temp == ',') // store the latitude in x_str
 									{
-										LCD_clearScreen();
-
 										while (1)
 										{
 											char c7 = UART5_ReceiveByte();
@@ -153,37 +135,39 @@ void readGPSModule(void)
 												break;
 											x_str[i_x] = c7;
 											i_x++;
+											x_str[i_x] = '\0';
 										}
 									}
 									char c8 = (char)UART5_ReceiveByte();
-									LCD_displayCharacter(c8);
-
 									if (c8 == 'N')
 									{
 										char c9 = (char)UART5_ReceiveByte();
-										LCD_displayCharacter(c9);
 										if (c9 == ',')
 										{
-
-											LCD_clearScreen();
 											while (1) // store the longitude
 											{
 												char c10 = (char)UART5_ReceiveByte();
-												LCD_displayCharacter(c10);
 												if (c10 == ',')
 													break;
 												y_str[i_y] = c10;
 												i_y++;
+												y_str[i_y] = '\0';
 											}
-											LCD_clearScreen();
-											LCD_displayString(x_str);
-											LCD_clearScreen();
-											LCD_displayString(y_str);
-											//_delay_ms(1000);
-											points[number_of_points].x = atof(x_str);
-											points[number_of_points].y = atof(y_str);
-											if ((points[number_of_points].x >= x_dest_min && points[number_of_points].x <= x_dest_max) && (points[number_of_points].y >= y_dest_min && points[number_of_points].y <= y_dest_max))
-												flag_destination = 1;
+											// the next block to cut the first zeroes from longitude 
+											/////////////////////////////////////////////////////////////////////
+											int counter = 0;
+											while (y_str[counter] == '0')
+												counter++; // output here is number of zeroes in longitude
+											int index = 0;
+											while (y_str[counter] != '\0')
+											{
+												y_str_modified[index] = y_str[counter];
+												counter++;
+												index++;
+											}
+											y_str_modified[index] = '\0';
+											//////////////////////////////////////////////////////////////////                                         
+											modify_points(x_str, y_str_modified);
 											break;
 										}
 									}
@@ -195,7 +179,6 @@ void readGPSModule(void)
 			}
 		}
 	}
-}
 
 void main()
 { 
