@@ -200,13 +200,6 @@ NVIC Registers
 #define NVIC_DIS3_REG             (*((volatile unsigned long *)0xE000E18C))
 #define NVIC_DIS4_REG             (*((volatile unsigned long *)0xE000E190))
 
-
-
-#define NVIC_SYSTEM_PRI1_REG      (*((volatile unsigned long *)0xE000ED18))
-#define NVIC_SYSTEM_PRI2_REG      (*((volatile unsigned long *)0xE000ED1C))
-#define NVIC_SYSTEM_PRI3_REG      (*((volatile unsigned long *)0xE000ED20))
-#define NVIC_SYSTEM_SYSHNDCTRL      (*((volatile unsigned long *)0xE000ED24))
-
 //*****************************************************************************
 //
 // UART registers (UART0)
@@ -285,5 +278,27 @@ NVIC Registers
 /************************************************************************/
 #define SYSCTL_RCGCUART_REG       (*((volatile uint32_t *)0x400FE618))
 
+
+// EEPROM registers (EEPROM)
+//
+//*****************************************************************************
+#define EEPROM_EESIZE_REG         (*((volatile uint32_t *)0x400AF000))
+#define EEPROM_EEBLOCK_REG        (*((volatile uint32_t *)0x400AF004))
+#define EEPROM_EEOFFSET_REG       (*((volatile uint32_t *)0x400AF008))
+#define EEPROM_EERDWR_REG         (*((volatile uint32_t *)0x400AF010))
+#define EEPROM_EERDWRINC_REG      (*((volatile uint32_t *)0x400AF014))
+#define EEPROM_EEDONE_REG         (*((volatile uint32_t *)0x400AF018))
+#define EEPROM_EESUPP_REG         (*((volatile uint32_t *)0x400AF01C))
+#define EEPROM_EEUNLOCK_REG       (*((volatile uint32_t *)0x400AF020))
+#define EEPROM_EEPROT_REG         (*((volatile uint32_t *)0x400AF030))
+#define EEPROM_EEPASS0_REG        (*((volatile uint32_t *)0x400AF034))
+#define EEPROM_EEPASS1_REG        (*((volatile uint32_t *)0x400AF038))
+#define EEPROM_EEPASS2_REG        (*((volatile uint32_t *)0x400AF03C))
+#define EEPROM_EEINT_REG          (*((volatile uint32_t *)0x400AF040))
+#define EEPROM_EEHIDE_REG         (*((volatile uint32_t *)0x400AF050))
+#define EEPROM_EEDBGME_REG        (*((volatile uint32_t *)0x400AF080))
+#define EEPROM_PP_REG             (*((volatile uint32_t *)0x400AFFC0))
+
+#define SYSCTL_RCGCEEPROM_R     (*((volatile uint32_t *)0x400FE658))
 
 #endif

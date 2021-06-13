@@ -275,31 +275,6 @@ NVIC Registers
 #define UART2_PP_REG              (*((volatile uint32_t *)0x4000EFC0))
 #define UART2_CC_REG              (*((volatile uint32_t *)0x4000EFC8))
 
-//*****************************************************************************
-//
-// UART registers (UART5)
-//
-//*****************************************************************************
-#define UART5_DR_REG              (*((volatile uint32_t *)0x40011000))
-#define UART5_RSR_REG             (*((volatile uint32_t *)0x40011004))
-#define UART5_ECR_REG             (*((volatile uint32_t *)0x40011004))
-#define UART5_FR_REG              (*((volatile uint32_t *)0x40011018))
-#define UART5_ILPR_REG            (*((volatile uint32_t *)0x40011020))
-#define UART5_IBRD_REG            (*((volatile uint32_t *)0x40011024))
-#define UART5_FBRD_REG            (*((volatile uint32_t *)0x40011028))
-#define UART5_LCRH_REG            (*((volatile uint32_t *)0x4001102C))
-#define UART5_CTL_REG             (*((volatile uint32_t *)0x40011030))
-#define UART5_IFLS_REG            (*((volatile uint32_t *)0x40011034))
-#define UART5_IM_REG              (*((volatile uint32_t *)0x40011038))
-#define UART5_RIS_REG             (*((volatile uint32_t *)0x4001103C))
-#define UART5_MIS_REG             (*((volatile uint32_t *)0x40011040))
-#define UART5_ICR_REG             (*((volatile uint32_t *)0x40011044))
-#define UART5_DMACTL_REG          (*((volatile uint32_t *)0x40011048))
-#define UART5_9BITADDR_REG        (*((volatile uint32_t *)0x400110A4))
-#define UART5_9BITAMASK_REG       (*((volatile uint32_t *)0x400110A8))
-#define UART5_PP_REG              (*((volatile uint32_t *)0x40011FC0))
-#define UART5_CC_REG              (*((volatile uint32_t *)0x40011FC8))
-
 /************************************************************************/
 #define SYSCTL_RCGCUART_REG       (*((volatile uint32_t *)0x400FE618))
 
